@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "json-humanifier",
   "version": "0.0.0",
   "description": "",
   "main": "build/src/index.js",
@@ -10,18 +10,22 @@
   "license": "Apache-2.0",
   "keywords": [],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "coverage": "jest --coverage",
     "check": "gts check",
     "clean": "gts clean",
-    "compile": "tsc -p .",
+    "compile": "gts check && tsc -p .",
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check"
   },
   "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "@types/node": "^10.0.3",
     "gts": "^1.1.0",
-    "typescript": "~3.5.0",
-    "@types/node": "^10.0.3"
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.5.3"
   }
 }

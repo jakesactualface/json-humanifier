@@ -96,3 +96,9 @@ tests/cases/user/puppeteer/puppeteer
 tests/cases/user/axios-src/axios-src
 tests/cases/user/prettier/prettier
 .eslintcache
+
+# Build output directory
+build
+
+# IDE configuration files
+.vscode
